@@ -1,0 +1,355 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+html{
+    background-image: url(../images/space.jpg);
+}
+
+body{
+    font-family: myFirstFont;
+    background-color: white;
+    
+    background-image: url(../images/space.jpg);
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+
+}
+
+.container{
+
+background-color: #ffffff;
+border: solid black;
+
+
+}
+
+@font-face{
+    font-family: myFirstFont;
+    src: url(Fonts/Retrograde-Regular.otf);
+}
+
+#wrapper{
+display: block;
+grid-template-rows: 200px 100px;
+margin-left: 35rem; 
+margin-right: 30rem;
+text-align: center;
+border: solid black 2px;
+
+
+
+background-color: white;
+}
+
+#section{
+  
+    margin-left: 5rem;
+}
+
+#mwrapper{
+    display: block;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 200px;
+    margin-left: 5rem; 
+    text-align: center;
+    font-family: 'Teko', sans-serif;
+    background-color: rgba(red, green, blue, 1);
+    }
+
+.calendar{
+
+    font-family: Arial, Helvetica, sans-serif;
+    color:#f4f0bbff;
+    box-shadow: 10px 10px black;
+
+display: flex;
+padding: 5px;
+margin: auto auto auto auto;
+background-image: url(Images/cogsback.png);
+    background-size: cover;
+    border: solid black 2px;
+
+}
+
+.getstarted{
+    font-size: 50px;
+    
+    margin: 15rem auto auto auto;
+    text-align: center;
+    text-shadow: #f4f0bbff 4px 4px;
+    margin-bottom: 40px;
+    padding: 1px;
+    /* background-color: #f4f0bbff;
+    border: solid black 5px;
+    box-shadow: 5px 5px black; */
+}
+
+.con{
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    align-items: center;
+    text-align: center;
+    margin: auto auto auto auto;
+}
+
+.weekday{
+    color:#f4f0bbff;
+    box-shadow: 3px 3px black;
+    background-color: rgb(124, 2, 2);
+    text-align: center;
+    margin: 5px;
+    padding: 10px;
+    border: solid black 2px;
+    
+
+}
+#boll{
+    opacity: 1;
+    animation-duration: 0.15s;
+    animation-fill-mode: forwards;
+    animation-name: none;
+    animation-iteration-count: initial;
+    animation-direction: alternate;
+    
+
+}
+
+svg:hover .cls-7 {
+
+    stroke-dasharray: 1000;
+    stroke-dashoffset: 1000;
+    animation: paint 10s linear forwards;
+
+
+}
+
+@keyframes paint{
+to{
+stroke-dashoffset: 0;
+}
+}
+
+svg:hover #boll {
+
+
+    
+    opacity: 1;
+    animation-duration: 0.15s;
+    animation-fill-mode: forwards;
+    animation-name: skjut;
+    animation-iteration-count: initial;
+    animation-direction: alternate;
+    
+
+
+}
+
+@keyframes skjut{
+
+    100%{
+        
+        
+        transform: translate(110px, -90px);
+       
+        
+    }
+  
+    
+}
+
+.weekhours{
+
+    color:#f4f0bbff;
+    box-shadow: 2px 2px black;
+    background-color: #43291F;
+    border: solid black 2px;
+    padding: 1px;
+    margin-top: 1px;
+    background-image: url(Images/cogsback.png);
+    background-size: cover;
+}
+
+
+
+
+body::-webkit-scrollbar{
+    width: 0.25rem;
+}
+
+body::-webkit-scrollbar-thumb{
+    background: #f4f0bbff;
+}
+
+
+body::-webkit-scrollbar-track{
+    background: rgb(0, 0, 0);
+}
+
+
+.logoc{
+    width: 300px;
+   
+    margin: auto auto auto auto;
+}
+
+
+.navbar{
+    width: 5rem;
+    height: 100vh;
+    position: fixed;
+    background-color: rgb(0, 0, 0);
+    border-right: solid #f4f0bbff 10px;
+   
+}
+
+.navbar-nav{
+    list-style:none;
+    padding: 0;
+    maRgin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    height: 100vh;
+   
+}
+
+.nav-item{
+width: 100%;
+margin: 5px;
+}
+
+svg{
+    width: 300px;
+    
+    
+}
+
+svg rect{
+    background-color: black;
+}
+
+svg .st0{
+    opacity: 0;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    animation-name: animering;
+    animation-iteration-count: initial;
+    animation-direction: alternate;
+    
+    
+    
+
+}
+
+svg .st1{
+    opacity: 0;
+    animation-duration: 1s;
+    animation-name: animering;
+    animation-iteration-count: initial;
+    animation-direction: alternate;
+    animation-delay: 2s;
+    animation-fill-mode: forwards;
+    
+
+}
+
+svg .st2{
+    opacity: 0;
+    animation-duration: 1s;
+    animation-name: animering;
+    animation-iteration-count: initial;
+    animation-direction: alternate;
+    animation-fill-mode: forwards;
+    animation-delay: 4s;
+
+}
+
+svg .st3{
+    opacity: 0;
+    animation-duration: 1s;
+    animation-name: animering;
+    animation-iteration-count: initial;
+    animation-direction: alternate;
+    animation-fill-mode: forwards;
+    animation-delay: 6s;
+
+}
+
+svg .st4{
+    opacity: 0;
+    animation-duration: 1s;
+    animation-name: animering;
+    animation-iteration-count: initial;
+    animation-direction: alternate;
+    animation-fill-mode: forwards;
+    animation-delay: 8s;
+
+}
+
+svg .st5{
+    opacity: 0;
+    animation-duration: 1s;
+    animation-name: animering;
+    animation-iteration-count: initial;
+    animation-direction: alternate;
+    animation-fill-mode: forwards;
+    animation-delay: 10s;
+
+}
+
+@keyframes animering{
+
+
+    0% {
+        opacity: 0;
+    }
+    100% {        
+        opacity: 1;
+    }
+}
+
+
+
+.icon{
+    width: 4rem;
+    height: 75px;
+    margin: auto auto auto auto;
+}
+
+
+@media screen and (max-width: 600px){
+    .calendar{
+
+        flex-direction: column;
+    }
+}
+
+
+
+
+
+img.vert-move {
+    -webkit-animation: mover 1s infinite  alternate;
+    animation: mover 1s infinite  alternate;
+    /* margin-top: 25%; */
+   padding: 30px;
+}
+img.vert-move {
+    -webkit-animation: mover 1s infinite  alternate;
+    animation: mover 1s infinite  alternate;
+}
+@-webkit-keyframes mover {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-10px); }
+}
+@keyframes mover {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-10px); }
+}

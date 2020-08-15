@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=, initial-scale=1.0">
+        <link rel="shortcut icon" href="{{ url_for('static', filename='images/favicon.ico') }}">
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/evolviaredcss.css') }}">
+        <link href="https://fonts.googleapis.com/css2?family=Teko&display=swap" rel="stylesheet">
+        <script type="text/javascript" src="script.js"></script>
+        <title>Evolvia</title>
+    </head>
+
+   
+    <div class="navbar">
+        <ul class="navbar-nav">
+        <li class="nav-item">
+                <a href="/start" class="nav-link">
+                <svg class="icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 325 325">
+      <defs>
+        <style>
+          .cls-10 {
+            isolation: isolate;
+          }
+    
+          .cls-20, .cls-60 {
+            fill: #500;
+          }
+    
+          .cls-30 {
+            fill: #f4f0bb;
+          }
+    
+          .cls-40 {
+            fill: #a00;
+          }
+    
+          .cls-50 {
+            opacity: 0.75;
+            mix-blend-mode: multiply;
+          }
+    
+          .cls-60 {
+            font-size: 184.53px;
+            stroke: #f4f0bb;
+            stroke-miterlimit: 10;
+            stroke-width: 4px;
+            font-family: Retrograde-Bold, Retrograde;
+            font-weight: 700;
+          }
+        </style>
+      </defs>
+      <g class="cls-1">
+        <g id="Lager_1" data-name="Lager 1">
+          <g>
+            <circle class="cls-20" cx="162.5" cy="162.5" r="157.5"/>
+            <path class="cls-30" d="M162.5,10A152.49,152.49,0,0,1,270.33,270.33,152.49,152.49,0,1,1,54.67,54.67,151.47,151.47,0,0,1,162.5,10m0-10A162.5,162.5,0,1,0,325,162.5,162.5,162.5,0,0,0,162.5,0Z" transform="translate(0 0)"/>
+          </g>
+          <g>
+            <circle class="cls-40" cx="162.5" cy="161.5" r="122.5"/>
+            <path class="cls-30" d="M162.5,44A117.48,117.48,0,1,1,79.41,78.41,116.75,116.75,0,0,1,162.5,44m0-10A127.5,127.5,0,1,0,290,161.5,127.5,127.5,0,0,0,162.5,34Z" transform="translate(0 0)"/>
+          </g>
+          <text/>      <g>
+            <image class="cls-50" width="154" height="269" transform="translate(96 56)" xlink:href="data:image/png;base64,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"/>
+            <text class="cls-60" transform="translate(103.88 221.5) scale(0.79 1)">E</text>
+          </g>
+        </g>
+      </g>
+    </svg>
+    
+    
+    
+    
+                </a>
+            </li>
+            
+            <!-- <li class="nav-item">
+                <a href="#" class="nav-link">
+                    <img class="icon" src="Images/fire.png"> 
+                </a>
+            </li>
+    
+            
+            <li class="nav-item">
+                <a href="#" class="nav-link">
+                    <img class="icon" src="Images/social.png"> 
+                </a>
+            </li> -->
+    
+            
+            <li class="nav-item">
+                <a href="/goals" class="nav-link">
+                <svg class="icon"  id="Lager_1" data-name="Lager 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 325 325">
+      <defs>
+        <style>
+          .cls-1 {
+            fill: #500;
+          }
+    
+          .cls-2 {
+            fill: #f4f0bb;
+          }
+    
+          .cls-3 {
+            fill: #a00;
+          }
+    
+          .cls-4, .cls-5 {
+            fill: none;
+          }
+    
+          .cls-4 {
+            stroke: #f4f0bb;
+          }
+    
+          .cls-4, .cls-5, .cls-6 {
+            stroke-miterlimit: 10;
+          }
+    
+          .cls-4, .cls-6 {
+            stroke-width: 2px;
+          }
+    
+          .cls-5 {
+            stroke: #43291f;
+            stroke-width: 10px;
+          }
+    
+          .cls-6 {
+            fill: #fff;
+            stroke: #000;
+          }
+        </style>
+      </defs>
+      <g>
+        <circle class="cls-1" cx="162.5" cy="162.5" r="157.5"/>
+        <path class="cls-2" d="M511.5,232a152.51,152.51,0,1,1-107.83,44.67A151.47,151.47,0,0,1,511.5,232m0-10A162.5,162.5,0,1,0,674,384.5,162.5,162.5,0,0,0,511.5,222Z" transform="translate(-349 -222)"/>
+      </g>
+      <text x="-349" y="-222"/>  <g>
+        <circle class="cls-3" cx="162.5" cy="161.5" r="122.5"/>
+        <path class="cls-2" d="M511.5,266a117.48,117.48,0,1,1-83.09,34.41A116.75,116.75,0,0,1,511.5,266m0-10A127.5,127.5,0,1,0,639,383.5,127.5,127.5,0,0,0,511.5,256Z" transform="translate(-349 -222)"/>
+      </g>
+      <line class="cls-4" x1="196" y1="113" x2="259" y2="131"/>
+      <line class="cls-4" x1="195.68" y1="118.19" x2="258.68" y2="136.19"/>
+      <line class="cls-4" x1="195.68" y1="124.19" x2="258.68" y2="142.19"/>
+      <line class="cls-4" x1="195.68" y1="128.19" x2="258.68" y2="146.19"/>
+      <line class="cls-4" x1="195.68" y1="133.19" x2="258.68" y2="151.19"/>
+      <line class="cls-4" x1="195.68" y1="139.19" x2="258.68" y2="157.19"/>
+      <line class="cls-4" x1="195.68" y1="144.19" x2="258.68" y2="162.19"/>
+      <line class="cls-4" x1="195.68" y1="151.19" x2="258.68" y2="169.19"/>
+      <line class="cls-4" x1="195.68" y1="157.19" x2="258.68" y2="175.19"/>
+      <line class="cls-4" x1="168" y1="109" x2="186" y2="109"/>
+      <line class="cls-4" x1="168" y1="113" x2="186" y2="113"/>
+      <line class="cls-4" x1="168" y1="117" x2="186" y2="117"/>
+      <line class="cls-4" x1="168" y1="122" x2="186" y2="122"/>
+      <line class="cls-4" x1="168" y1="127" x2="186" y2="127"/>
+      <line class="cls-4" x1="168" y1="132" x2="186" y2="132"/>
+      <line class="cls-4" x1="168" y1="137" x2="186" y2="137"/>
+      <line class="cls-4" x1="168" y1="142" x2="186" y2="142"/>
+      <line class="cls-4" x1="168" y1="146" x2="186" y2="146"/>
+      <line class="cls-4" x1="168" y1="152" x2="186" y2="152"/>
+      <line class="cls-4" x1="168" y1="157" x2="186" y2="157"/>
+      <line class="cls-4" x1="190.68" y1="107.19" x2="253.68" y2="125.19"/>
+      <line class="cls-4" x1="168" y1="105" x2="186" y2="105"/>
+      <line class="cls-4" x1="244" y1="125" x2="261" y2="125"/>
+      <line class="cls-4" x1="243" y1="129" x2="261" y2="129"/>
+      <line class="cls-4" x1="243" y1="134" x2="261" y2="134"/>
+      <line class="cls-4" x1="243" y1="140" x2="261" y2="140"/>
+      <line class="cls-4" x1="243" y1="146" x2="261" y2="146"/>
+      <line class="cls-4" x1="240" y1="152" x2="258" y2="152"/>
+      <line class="cls-4" x1="245" y1="157" x2="263" y2="157"/>
+      <line class="cls-4" x1="243" y1="162" x2="261" y2="162"/>
+      <line class="cls-4" x1="243" y1="167" x2="261" y2="167"/>
+      <line class="cls-4" x1="243" y1="173" x2="261" y2="173"/>
+      <line class="cls-4" x1="243" y1="180" x2="261" y2="180"/>
+      <line class="cls-4" x1="243" y1="177" x2="261" y2="177"/>
+      <line class="cls-5" x1="163" y1="161" x2="163" y2="94"/>
+      <line class="cls-5" x1="163" y1="94" x2="240" y2="113"/>
+      <line class="cls-5" x1="264" y1="185" x2="264" y2="121"/>
+      <line class="cls-5" x1="240" y1="189" x2="240" y2="113"/>
+      <line class="cls-5" x1="191" y1="162" x2="191" y2="107"/>
+      <line class="cls-5" x1="190.68" y1="100.69" x2="267.68" y2="119.69"/>
+      <circle id="boll" class="cls-6" cx="91.5" cy="212.5" r="8.5"/>
+    </svg>
+                </a>
+            </li>
+    
+            <li class="nav-item">
+                <a href="/calendar" class="nav-link">
+                <svg class="icon" id="Lager_1" data-name="Lager 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 325 325">
+      <defs>
+        <style>
+          .cls-1 {
+            fill: #500;
+          }
+    
+          .cls-2 {
+            fill: #f4f0bb;
+          }
+    
+          .cls-3 {
+            fill: #a00;
+          }
+    
+          .cls-4 {
+            fill: #43291f;
+          }
+    
+          .cls-5, .cls-7 {
+            fill: none;
+            stroke-miterlimit: 10;
+          }
+    
+          .cls-5 {
+            stroke: #43291f;
+            stroke-width: 10px;
+          }
+    
+          .cls-7 {
+            stroke: #a00;
+          }
+        </style>
+      </defs>
+      <g>
+        <circle class="cls-1" cx="162.5" cy="162.5" r="157.5"/>
+        <path class="cls-2" d="M162.5,10A152.49,152.49,0,0,1,270.33,270.33,152.49,152.49,0,1,1,54.67,54.67,151.47,151.47,0,0,1,162.5,10m0-10A162.5,162.5,0,1,0,325,162.5,162.5,162.5,0,0,0,162.5,0Z" transform="translate(0 0)"/>
+      </g>
+      <text/>  <g>
+        <circle class="cls-3" cx="162.5" cy="161.5" r="122.5"/>
+        <path class="cls-2" d="M162.5,44A117.48,117.48,0,1,1,79.41,78.41,116.75,116.75,0,0,1,162.5,44m0-10A127.5,127.5,0,1,0,290,161.5,127.5,127.5,0,0,0,162.5,34Z" transform="translate(0 0)"/>
+      </g>
+      <g>
+        <rect class="cls-4" x="96" y="104" width="144" height="109"/>
+        <path class="cls-4" d="M235,109v99H101V109H235m10-10H91V218H245V99Z" transform="translate(0 0)"/>
+      </g>
+      <g>
+        <rect class="cls-2" x="96" y="104" width="144" height="109"/>
+        <path class="cls-4" d="M235,109v99H101V109H235m10-10H91V218H245V99Z" transform="translate(0 0)"/>
+      </g>
+      <line class="cls-5" x1="210" y1="86" x2="210" y2="99"/>
+      <line class="cls-5" x1="120" y1="93" x2="120" y2="106"/>
+      <line class="cls-5" x1="98" y1="182" x2="237" y2="182"/>
+      <line class="cls-5" x1="99" y1="141" x2="238" y2="141"/>
+      <line class="cls-5" x1="131" y1="104" x2="131" y2="217"/>
+      <line class="cls-5" x1="163" y1="105" x2="163" y2="218"/>
+      <line class="cls-5" x1="202" y1="105" x2="202" y2="218"/>
+      <line class="cls-7" x1="110.5" y1="131.5" x2="122.5" y2="115.5"/>
+      <line class="cls-7" x1="105.5" y1="120.5" x2="110.5" y2="131.5"/>
+      <line class="cls-7" x1="142.91" y1="131.7" x2="154.91" y2="115.7"/>
+      <line class="cls-7" x1="138.41" y1="121.2" x2="143.41" y2="132.2"/>
+    </svg>
+                </a>
+            </li>
+        </ul>
+    </div>
+<body>
+
+{% block content %}
+
+
+{% endblock %}
+
+</body>
+</html>
