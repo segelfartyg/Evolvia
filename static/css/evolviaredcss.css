@@ -5,7 +5,7 @@
 
 
 html{
-    
+    background-image: url(../images/space.jpg);
 }
 
 body{
@@ -14,16 +14,9 @@ body{
     
     background-image: url(../images/space.jpg);
     background-size: cover;
-    background-repeat: no-repeat;
     margin: 0;
     padding: 0;
     height: 100%;
-
-}
-
-.getstarted svg{
-margin-left: 75px;
-margin-right: 75px;
 
 }
 
@@ -95,8 +88,6 @@ background-image: url(Images/cogsback.png);
     border: solid black 5px;
     box-shadow: 5px 5px black; */
 }
-
-
 
 .con{
     position: relative;
@@ -362,12 +353,3 @@ img.vert-move {
     0% { transform: translateY(0); }
     100% { transform: translateY(-10px); }
 }
-
-
-
-@media screen and (max-width: 1000px) {
-    .getstarted svg{
-        width: 200px;
-
-    }
-  }
